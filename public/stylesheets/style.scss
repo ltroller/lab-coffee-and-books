@@ -1,8 +1,140 @@
 body {
-  padding: 50px;
+  padding:0; margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+
+.main-wrapper {
+  position: relative;
+  margin: 20px auto;
+  background: rgb(241, 241, 241);
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  h1 {
+    padding: 20px;
+    margin: -30px -30px 10px;
+    background: #222;
+    color: #fff;
+  }
+
+}
+
+form {
+  #error-msg {
+    background: rgb(238, 138, 138);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  fieldset {
+    border: 0;
+    margin: 0 0 10px;
+    label {
+      font-weight: bold;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+      display: block;
+      border-bottom: 1px solid #222;
+    }
+    input[type="text"], select {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 10px;
+      border: 0;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: block;
+      &:read-only {
+        opacity: .7;
+      }
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 25px;
+  background: #555;
+  color: #fff;
+  border-radius: 10px;
+  line-height: 30px;
+  border: 0;
+  cursor: pointer;
+  &.btn-primary {
+    background: rgb(18, 81, 197);
+  }
+  &.btn-success {
+    background: green;
+  }
+  &.disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+}
+
+.block-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -15px;
+  .block {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    position: relative;
+    a.insert {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      color: #fff;
+      background: rgb(170, 65, 4);
+      text-decoration:none;
+      text-transform: uppercase;
+      padding: 0 15px;
+      line-height: 30px;
+    }
+  }
+  h2 {
+    margin: 0 0 10px;
+
+  }
+}
+
+.map-wrapper {
+  height: 500px;
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#success-notification {
+  background: rgb(93, 134, 93);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+ul.places {
+  padding: 0;
+  margin: 0;
+  li {
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-size: 16px;
+    margin: 0;
+  }
+  .info {
+    font-size: 14px;
+    color: #666;
+  }
 }

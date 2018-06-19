@@ -1,2 +1,33 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+
+<p>Welcome to the Coffee & Books LAB project</p>
+{{#if addSuccess }}
+<div id="success-notification">
+    Your place has successfully been added
+</div>
+{{/if}}
+<div class="block-wrapper">
+    <div class="map-wrapper block">
+        <div id="map"></div>
+    </div>
+
+    <div id="places-page" class="places-wrapper block">
+        <a class="insert" href="/add-place">Add a new place +</a>
+        <h2>My places</h2>
+        <ul class="places">
+            {{#each places}}
+            <li>
+                <h5>{{name}}</h5>
+                <div class="info">{{description}}</div>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <script>
+        var places = [];
+        {{#each places}}
+        places[{{@index}}] = {name: '{{name}}', description: '{{description}}', coords: [{{location.coordinates}}]};
+        {{/each}}
+    </script>
+</div>

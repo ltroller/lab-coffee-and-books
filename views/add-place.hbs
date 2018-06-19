@@ -1,0 +1,30 @@
+<h1>Add a place</h1>
+<div class="block-wrapper">
+    <div class="map-wrapper block">
+        <div id="map"></div>
+    </div>
+
+    <div class="block">
+        <form method="POST" action="/add-place">
+        <div id="error-msg"></div>
+        <fieldset>
+            <label>Place details</label>
+            <input type="text" name="name"        placeholder="name">
+            <input type="text" name="description" placeholder="description">
+            <select name="type">
+                <option value="CAFE">Coffee place</option>
+                <option value="BOOKSTORE">Bookstore</option>
+            </select>
+        </fieldset>
+        <fieldset>
+        <label>Address</label>
+            <input type="text" name="address" id="pl_address" placeholder="Type address to geocode"/>
+            <input type="text" name="latitude" id="pl_lat" placeholder="Latitude" readonly>
+            <input type="text" name="longitude" id="pl_lng" placeholder="Longitude" readonly>
+        </fieldset> 
+        <input type="button" id="pl_geocode" class="btn btn-primary" value="Geocode this">
+        <input type="submit" id="pl_submit" name="submit" class="btn btn-success disabled" value="Add place to DB" disabled>
+        </form>
+
+    </div>
+</div>

@@ -1,0 +1,115 @@
+body {
+  padding: 0;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+.main-wrapper {
+  position: relative;
+  margin: 20px auto;
+  background: #f1f1f1;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  max-width: 1200px; }
+  .main-wrapper h1 {
+    padding: 20px;
+    margin: -30px -30px 10px;
+    background: #222;
+    color: #fff; }
+
+form #error-msg {
+  background: #ee8a8a;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: none; }
+
+form fieldset {
+  border: 0;
+  margin: 0 0 10px; }
+  form fieldset label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    display: block;
+    border-bottom: 1px solid #222; }
+  form fieldset input[type="text"], form fieldset select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block; }
+    form fieldset input[type="text"]:read-only, form fieldset select:read-only {
+      opacity: .7; }
+
+.btn {
+  display: inline-block;
+  padding: 0 25px;
+  background: #555;
+  color: #fff;
+  border-radius: 10px;
+  line-height: 30px;
+  border: 0;
+  cursor: pointer; }
+  .btn.btn-primary {
+    background: #1251c5; }
+  .btn.btn-success {
+    background: green; }
+  .btn.disabled {
+    opacity: .5;
+    cursor: not-allowed; }
+
+.block-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -15px; }
+  .block-wrapper .block {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 15px;
+    position: relative; }
+    .block-wrapper .block a.insert {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      color: #fff;
+      background: #aa4104;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0 15px;
+      line-height: 30px; }
+  .block-wrapper h2 {
+    margin: 0 0 10px; }
+
+.map-wrapper {
+  height: 500px; }
+  .map-wrapper #map {
+    height: 100%;
+    width: 100%; }
+
+#success-notification {
+  background: #5d865d;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px; }
+
+ul.places {
+  padding: 0;
+  margin: 0; }
+  ul.places li {
+    margin-bottom: 10px; }
+  ul.places h5 {
+    font-size: 16px;
+    margin: 0; }
+  ul.places .info {
+    font-size: 14px;
+    color: #666; }
+
+/*# sourceMappingURL=style.css.map */
